@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "model-bot-api"
+version = "0.0.1"
+description = "API for cheques recognition with TG bot"
+authors = ["dzailz <katin.v.v@gmail.com>"]
+license = "GPL v.3"
+readme = "README.md"
+packages = [{include = "model_bot_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.89.1"
+pydantic = "^1.10.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
