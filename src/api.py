@@ -1,6 +1,3 @@
-import os.path
-from pathlib import Path
-import aiofiles
 from fastapi import FastAPI, UploadFile
 from fastapi.responses import HTMLResponse
 
@@ -8,8 +5,6 @@ from src.helpers.process_files import ProcessFiles
 from src.spec.process_files import ProcessFiles as ProcessFilesSpec
 
 app = FastAPI()
-
-
 
 
 @app.get("/")
